@@ -1,0 +1,115 @@
+.welcome {
+    background: rgb(199, 210, 254);
+    border-radius: 10px;
+    padding: var(--padding-md) var(--padding-md);
+    color: rgb(30, 41, 59);
+
+    h1 {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: var(--margin-xxs);
+
+        @media screen and (max-width: 600px) {
+            font-size: 1.2rem;
+        }
+
+        svg {
+            font-size: 2rem;
+            flex-shrink: 0;
+
+            @media screen and (max-width: 600px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.mainInfo {
+    margin: var(--margin-md) 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 325px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+        margin-top: var(--margin-md);
+        margin-bottom: var(--margin-xs);
+    }
+
+    .lstPingUpd {
+        color: #98a6ad;
+        font-Size: 14px;
+        font-Weight: 700;
+    }
+
+
+    .info {
+        display: flex;
+
+        .img_container {
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            border-radius: 50%;
+            display: flex;
+            border: 1px solid transparent;
+
+        }
+    }
+
+    .options {
+        button {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            white-space: nowrap;
+            padding: var(--padding-xxs) var(--padding-sm);
+            outline: none;
+            border: none;
+            background: #6366f1;
+            color: white;
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            font-Size: 13px;
+            border-radius: 5px;
+            transition: background 200ms ease-in-out;
+
+            &:hover {
+                background: #4648b4;
+            }
+
+            svg {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+.homeInfo2 {
+    margin-top: var(--margin-md);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+
+    @media screen and (max-width: 650px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+.page-stats {
+    margin-left: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    list-style: none;
+}
